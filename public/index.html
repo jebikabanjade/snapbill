@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SnapBill — Photo to PDF Invoice</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>SnapBill</h1>
+      <p class="tagline">Photograph a handwritten invoice. Get a clean PDF.</p>
+    </header>
+
+    <section class="upload">
+      <label id="dropzone" class="dropzone">
+        <input id="fileInput" type="file" accept="image/jpeg,image/png,image/webp" hidden />
+        <span id="dropLabel">📄 Drop invoice photo here<br /><small>or click to choose</small></span>
+      </label>
+      <p id="filename" class="filename"></p>
+    </section>
+
+    <section class="preview">
+      <img id="preview" alt="" hidden />
+    </section>
+
+    <section class="actions">
+      <button id="transcribe" disabled>Transcribe Invoice</button>
+    </section>
+
+    <section class="status" id="status" hidden></section>
+
+    <section class="result" id="resultSection" hidden>
+      <h2>Extracted text (you can edit before generating the PDF)</h2>
+      <textarea id="output" rows="14" placeholder="Transcribed text appears here..."></textarea>
+
+      <div class="actions">
+        <button id="download" disabled>Download PDF</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>🔒 Local AI powered by QVAC — your invoice never leaves this machine.</p>
+      <p class="small">⏱ First transcription may take 2–3 minutes on CPU-only machines.</p>
+    </footer>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
