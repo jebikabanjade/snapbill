@@ -4,9 +4,9 @@
 
 SnapBill is a lightweight local AI application that converts a photo of a handwritten invoice into a clean, downloadable PDF. All OCR and text extraction happens on-device via [QVAC](https://qvac.tether.io/) — no cloud API, no API key, no upload.
 
-![Handwritten invoice input](./docs/test-handwritten-invoice.jpeg)
+![Handwritten invoice input](./docs/invoice-input.jpeg)
 
-![Generated PDF output](./docs/test-pdf-invoice.png)
+![Generated PDF output](./docs/invoice-output.png)
 
 ---
 
