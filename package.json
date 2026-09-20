@@ -1,0 +1,21 @@
+{
+  "name": "snapbill",
+  "version": "0.1.0",
+  "description": "Photograph a handwritten invoice. Get a clean PDF. Local AI powered by QVAC.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@qvac/sdk": "^0.19.0",
+    "pdfkit": "^0.15.2",
+    "sharp": "^0.33.5"
+  },
+  "license": "MIT",
+  "author": "Jebika Banjade",
+  "allowScripts": {
+    "sharp@0.33.5": true
+  }
+}
